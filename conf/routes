@@ -1,0 +1,13 @@
+GET     /                           controllers.HomeController.index
+
+POST	/addLocation				@controllers.HomeController.addLocation
+
+POST	/addCategory				@controllers.HomeController.addCategory
+
+POST	/addRestaurant				@controllers.HomeController.addRestaurant
+
+GET		/locations				    controllers.HomeController.getLocations
+
+GET		/locations/:id				controllers.HomeController.getLocationById(id: Long)
+
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
